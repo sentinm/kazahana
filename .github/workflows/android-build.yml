@@ -28,6 +28,7 @@ jobs:
                   channel: master
 
             - name: 🚧 Do prerequisites
+              uses: ./
               run: |
                   flutter pub get
                   npm ci
