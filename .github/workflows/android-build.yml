@@ -30,6 +30,7 @@ jobs:
             - name: 🚧 Do prerequisites
               run: |
                   flutter pub get
+                  npm ci
                   npm run generator:run
 
             - name: 🚩 Check for existing releases
